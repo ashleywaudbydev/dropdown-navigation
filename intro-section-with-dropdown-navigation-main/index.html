@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./app.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+  
+  <main class="container">
+    <div class="overlay"></div>
+    <nav>
+      <div class="logo">
+        <h1>snap</h1>
+      </div>
+      <div id="hamburger-button-open" class="hamburger-button-open">
+        <img src=".//images/icon-menu.svg">
+      </div>
+      <div class="hamburger-menu">
+        <div id="hamburger-button-close" class="hamburger-button">
+          <img src=".//images/icon-close-menu.svg">
+        </div>
+
+        <div id="navigation-lists" class="navigation-lists">
+          <div class="lists">
+          <li class="drop-list">Features <img class="arrow-down" src=".//images/icon-arrow-down.svg"></li>
+          <ul class="list-items">
+            <li><img class="list-item-image" src=".//images/icon-todo.svg"> Todo List</li>
+            <li><img class="list-item-image" src=".//images/icon-calendar.svg"> Calender</li>
+            <li><img class="list-item-image" src=".//images/icon-reminders.svg"> Reminders</li>
+            <li><img class="list-item-image" src=".//images/icon-planning.svg"> Planning</li>
+          </ul>
+          <li class="drop-list">Company <img class="arrow-down" src=".//images/icon-arrow-down.svg"></li>
+          <ul class="list-items list-items-company">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+            
+          </ul>
+          <li class="drop-item">Careers</li>
+          <li class="drop-item">About</li>
+          </div>
+          <div class="login">
+            <p class="drop-item">Login</p>
+            <button class="btn">Register</button>
+          </div>
+        </div>
+        
+        
+     </div>
+    </nav>
+    <div class="hero-container">
+    <div class="hero"></div>
+
+    <div class="information-section">
+      <div class="info">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+        </p>
+        <button class="info-btn">Learn more</button>
+      </div>
+      
+      <div class="brands">
+        <img src=".//images/client-databiz.svg">
+        <img src=".//images/client-audiophile.svg">
+        <img src=".//images/client-meet.svg">
+        <img src=".//images/client-maker.svg">
+      </div>
+    </div>
+    </div>
+  </main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+/*Global styles*/
+:root{
+--Almost-White: hsl(0, 0%, 98%);
+--Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+li{
+    list-style-type: none;
+}
+body{
+    font-family: "Epilogue", sans-serif;
+    background-color: var(--Almost-White);
+    overflow-x: hidden;
+}
+.overlay{
+    display: none;
+    
+}
+.overlay-open{
+    background-color: var(--Almost-Black);
+    height: 100vh;
+    width: 50vw;
+    opacity: 0.6;
+    position: fixed;
+    display: flex;
+}
+/*hero styles*/
+.hero{
+    background-image: url(../images/image-hero-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 98vw;
+    height: 42vh;
+}
+/*information styles*/
+.information-section{
+    padding-top: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 4rem;
+    width: 100%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+h1{
+    font-weight: 900;
+}
+.info p{
+    padding: 0.5rem;
+    color: var(--Medium-Gray);
+    font-weight: 700;
+    line-height: 1.5rem;
+    width: 100%;
+    align-self: center;
+    font-size: 16px;
+}
+.info-btn{
+    width: fit-content;
+    cursor: pointer;
+    align-self: center;
+    padding:1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.75rem;
+    font-weight: 900;
+    color: var(--Almost-White);
+    background-color: var(--Almost-Black);
+    transition: all 1s ease-in-out;
+}
+.info-btn:hover{
+    color: var(--Almost-Black);
+    border: 2px solid var(--Almost-Black);
+    background-color: var(--Almost-White);
+}
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+.brands img{
+    width: 19%;
+    max-width: 100px;
+}
+/*hamburger menu styles*/
+.hamburger-menu{
+    display: none;
+    transition: all 5s ease-in-out;
+}
+.hamburger-button{
+   align-self: flex-end;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    cursor: pointer;
+}
+.hamburger-button-open{
+    cursor: pointer;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: var(--Medium-Gray);
+    font-weight: 600;
+}
+.arrow-down{
+    width: 15px;
+    margin-left: 1rem;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+}
+.btn{
+    width: 100%;
+    align-self: center;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: var(--Almost-White);
+    color: var(--Medium-Gray);
+    border: 2px solid var(--Medium-Gray);
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.btn:hover{
+    font-weight: 900;
+}
+/*navigation list styles*/
+.list-items{
+    padding-left: 2rem;
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+}
+.drop-list, .drop-item{
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}   
+.drop-list:hover, .drop-item:hover{
+    color: var(--Almost-Black);
+    font-weight: 600;
+}
+.list-item-image{
+    margin-right: 0.5rem;
+    width: 16px;
+}
+.open{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Almost-White);
+    position: absolute;
+    justify-self: flex-end;
+    width: 61%;
+    left: 40%;
+    top: 0%;
+    height: 100vh;
+}
+.change-arrows{
+    transform: rotate(180deg);
+}
+
+@media(min-width: 1400px){
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+      
+        
+    }
+
+    .hero-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        
+        
+        
+        padding-top: 0rem
+     }
+    .hero{
+        background-image: url(../images/image-hero-desktop.png);
+        width: 26.5%;
+        height: 680px;
+      
+        
+        
+    }
+
+    .info{
+        text-align: left;
+        margin-top: 8.5rem;
+        gap: 3rem;
+        width: 52%;
+        
+        
+    }
+
+    .info h1{
+        font-size: 66px;
+        
+        font-weight: bold;
+        
+    }
+
+  
+
+    .info-btn{
+        align-self: unset;
+       
+    }
+
+    .information-section{
+        width: 45%;
+        text-align: unset;
+        justify-content: unset;
+        align-items: unset;
+        display: flex;
+        gap: 5rem;
+        
+        
+        
+
+    }
+    
+       
+    
+    .hamburger-button, .hamburger-button-open, .overlay{
+        display: none;
+    }
+
+    .hamburger-menu, .open{
+        all: unset;
+        width: 100%;
+     
+    }
+    .navigation-lists{
+        all: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .lists{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .list-items{
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        position: absolute;
+        top: 10%;
+        font-size: 16px;
+        left: 7%;
+        gap: 1rem;
+        background-color: var(--Almost-White);
+        box-shadow: 0px 15px 15px rgba(128, 128, 128, 0.5);
+    }
+
+    .list-items-company{
+        margin-left: 13rem;
+    }
+    .drop-list, .drop-item{
+       
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }   
+    .login{
+        flex-direction: row;
+        width:unset
+    }
+
+    .btn{
+       width: fit-content;
+    }
+
+    .brands{
+        justify-content: unset;
+        
+        gap: 4rem;
+    }
+}
+
+
